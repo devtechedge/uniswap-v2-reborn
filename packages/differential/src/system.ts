@@ -54,7 +54,12 @@ export class System {
     set(ADMIN, "ADMIN"); set(FEE_TO, "FEE_TO"); set(ZERO, "ZERO");
     for (const [k, v] of Object.entries(TOKENS)) set(v, k);
     USERS.forEach((u, i) => set(u, `U${i}`));
-    for (const [a, b] of PAIR_KEYS) set(this.pairAddress(a, b), `PAIR(${this.label(a)},${this.label(b)})`);
+    // label every possible pair, not just the fuzzed pools, since CREATE2 addresses differ per implementation
+    for (let i = 0; i < ALL_TOKENS.length; i++)
+      for (let j = i + 1; j < ALL_TOKENS.length; j++) {
+        const [a, b] = [ALL_TOKENS[i]!, ALL_TOKENS[j]!];
+        set(this.pairAddress(a, b), `PAIR(${this.label(a)},${this.label(b)})`);
+      }
   }
 
   static async create(impl: Impl): Promise<System> {
