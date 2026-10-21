@@ -121,9 +121,7 @@ contract RebornPair is RebornERC20 {
             liquidity = AmmMath.sqrt(amount0.mul(amount1)).sub(MINIMUM_LIQUIDITY);
             _mint(address(0), MINIMUM_LIQUIDITY); // permanently locked
         } else {
-            liquidity = AmmMath.min(
-                amount0.mul(_totalSupply).div(_reserve0), amount1.mul(_totalSupply).div(_reserve1)
-            );
+            liquidity = AmmMath.min(amount0.mul(_totalSupply).div(_reserve0), amount1.mul(_totalSupply).div(_reserve1));
         }
         require(liquidity > 0, "UniswapV2: INSUFFICIENT_LIQUIDITY_MINTED");
         _mint(to, liquidity);
