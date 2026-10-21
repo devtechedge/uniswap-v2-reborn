@@ -9,3 +9,5 @@ contracts/cache
 *.log
 .env*
 reports/*.tmp
+next-env.d.ts
+*.tsbuildinfo
