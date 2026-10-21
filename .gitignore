@@ -5,7 +5,6 @@ out
 .turbo
 contracts/out
 contracts/cache
-contracts/lib
 .vercel
 *.log
 .env*
