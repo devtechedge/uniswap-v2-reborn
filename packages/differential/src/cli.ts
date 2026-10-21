@@ -13,8 +13,9 @@ for (let s = 1; s <= scenarios; s++) {
   if (s % 10 === 0) console.log(`scenario ${s}/${scenarios}: ${report.ops} ops, ${report.mismatches.length} mismatches`);
   if (report.mismatches.length) break;
 }
+const big = (_k: string, v: unknown) => (typeof v === "bigint" ? v.toString() : v);
 const out = { generatedAt: new Date().toISOString(), seconds: (Date.now() - t0) / 1000, impls, steps, ...report };
 mkdirSync(new URL("../../../reports/", import.meta.url), { recursive: true });
-writeFileSync(new URL("../../../reports/differential.json", import.meta.url), JSON.stringify(out, null, 2) + "\n");
-console.log(JSON.stringify({ ...out, mismatches: out.mismatches.slice(0, 3) }, null, 2));
+writeFileSync(new URL("../../../reports/differential.json", import.meta.url), JSON.stringify(out, big, 2) + "\n");
+console.log(JSON.stringify({ ...out, mismatches: out.mismatches.slice(0, 3) }, big, 2));
 process.exit(report.mismatches.length ? 1 : 0);
