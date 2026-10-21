@@ -111,7 +111,6 @@ export function Simulator() {
         </select>
         <table>
           <tbody>
-            <tr><td>Pair (CREATE2)</td><td className="mono">{pair.address}</td></tr>
             <tr><td>Reserve {symbolOf(pair.token0)}</td><td>{fmt(pair.reserve0)}</td></tr>
             <tr><td>Reserve {symbolOf(pair.token1)}</td><td>{fmt(pair.reserve1)}</td></tr>
             <tr><td>Spot price</td><td>{h[h.length - 1]!.spot.toPrecision(6)} {symbolOf(pair.token1)} per {symbolOf(pair.token0)}</td></tr>
@@ -126,12 +125,12 @@ export function Simulator() {
         </table>
         <h3>Spot vs TWAP (UQ112x112 accumulator)</h3>
         <LineChart series={[
-          { label: "spot", color: "#7dd3fc", points: h.map((p) => ({ x: p.t, y: p.spot })) },
-          { label: "TWAP since start", color: "#f0abfc", points: tw.map((p) => ({ x: p.t, y: p.twap })) },
+          { label: "spot", color: "var(--series-1)", points: h.map((p) => ({ x: p.t, y: p.spot })) },
+          { label: "TWAP since start", color: "var(--series-2)", points: tw.map((p) => ({ x: p.t, y: p.twap })) },
         ]} />
       </div>
 
-      <div className="card wide">
+      <div className="card wide scroll-pane">
         <h3>Transaction log (events exactly as the contracts emit them)</h3>
         {log.length === 0 && <p className="muted">No transactions yet.</p>}
         {log.map((l, i) => (

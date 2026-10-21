@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { quoteWethToUsdc, MAINNET, type MainnetQuote as Q } from "../lib/mainnet";
+import { quoteWethToUsdc, type MainnetQuote as Q } from "../lib/mainnet";
 import { fmt, parse } from "../lib/format";
 
 export function MainnetQuote() {
@@ -25,7 +25,7 @@ export function MainnetQuote() {
   return (
     <section className="card">
       <h3>Live mainnet check (read-only)</h3>
-      <p className="muted">Reads the real WETH/USDC pair <span className="mono">{MAINNET.pair.slice(0, 10)}...</span> and asks the deployed Router02 for a quote, then computes the same quote with the TypeScript model from the same reserves at the same block. No wallet, no transactions.</p>
+      <p className="muted">Reads the real WETH/USDC pool and asks the deployed Router02 for a quote, then computes the same quote with the TypeScript model from the same reserves at the same block. No wallet, no transactions.</p>
       <div className="row">
         <input value={amount} onChange={(e) => setAmount(e.target.value)} inputMode="decimal" aria-label="WETH amount" />
         <span>WETH to USDC</span>
