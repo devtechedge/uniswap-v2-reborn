@@ -8,3 +8,4 @@ contracts/cache
 .vercel
 *.log
 .env*
+reports/*.tmp
