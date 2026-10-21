@@ -1,0 +1,27 @@
+{
+  "rpc": "https://ethereum-rpc.publicnode.com",
+  "block": 26242250,
+  "fetchedAt": "2026-10-21T16:44:02.109Z",
+  "contracts": {
+    "UniswapV2Factory": {
+      "address": "0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f",
+      "bytes": 13859,
+      "sha256": "3abc53f12a9cb8ae37ebfada9efc261c1ab4c2759d161e341a49bf67df3f8321"
+    },
+    "UniswapV2Pair_WETH_USDC": {
+      "address": "0xB4e16d0168e52d35CaCD2c6185b44281Ec28C9Dc",
+      "bytes": 11293,
+      "sha256": "8b5db55fa9ab3b9527508d4abe0b39eb588bf310270c8e04b3f38214e8ba63b4"
+    },
+    "UniswapV2Router02": {
+      "address": "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D",
+      "bytes": 21943,
+      "sha256": "ccef50da4af021b09ada39d78db5d281fffff81a57969c7028bccc1f50d37854"
+    },
+    "WETH9": {
+      "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "bytes": 3124,
+      "sha256": "5566bf50796faf93c9b6f6adacd3b32c70bfe16b48ffc59db6cd144cbdc89739"
+    }
+  }
+}
