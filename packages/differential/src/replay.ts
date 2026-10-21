@@ -7,7 +7,7 @@ import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { getAmountOut } from "@v2r/model";
 import { System, TOKENS, USERS, type Impl } from "./system.js";
-import { execEvm, execModel, makeModel, type Op } from "./ops.js";
+import { execEvm, execModel, makeModel, type Op, type Outcome } from "./ops.js";
 
 export interface HistoricalCase {
   block: number;
@@ -52,13 +52,14 @@ export async function replay(impl: Impl, cases: HistoricalCase[]): Promise<Repla
     if (s.amount0In! > 0n) ops.push({ kind: "donate", from: U, token: t0, a: t0, b: t1, amount: s.amount0In! });
     if (s.amount1In! > 0n) ops.push({ kind: "donate", from: U, token: t1, a: t0, b: t1, amount: s.amount1In! });
     ops.push({ kind: "rawSwap", from: U, a: t0, b: t1, out0: s.amount0Out!, out1: s.amount1Out!, to: U });
-    let evmLast, modelLast;
+    let evmLast: Outcome | undefined;
+    let modelLast: Outcome | undefined;
     for (const op of ops) {
       evmLast = await execEvm(sys, op);
       modelLast = execModel(sys, w, op);
     }
     const expect = [c.after.reserve0, c.after.reserve1];
-    const syncOf = (o: typeof evmLast) => o?.events.find((e) => e.name === "Sync")?.args;
+    const syncOf = (o: Outcome | undefined) => o?.events.find((e) => e.name === "Sync")?.args;
     const got = syncOf(evmLast);
     if (evmLast?.ok && JSON.stringify(got) === JSON.stringify(expect)) res.exact++;
     else res.failures.push({ tx: c.tx, why: `evm ${evmLast?.ok ? JSON.stringify(got) : evmLast?.reason}` });

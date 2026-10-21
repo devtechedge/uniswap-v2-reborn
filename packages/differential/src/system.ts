@@ -125,7 +125,7 @@ export class System {
       const ev = decodeEventLog({ abi: eventsAbi, topics: l.topics as [Hex, ...Hex[]], data: l.data });
       const item = eventsAbi.find((e) => e.name === ev.eventName)!;
       const named = ev.args as Record<string, unknown>;
-      const values = item.inputs.map((inp, i) => named[inp.name ?? ""] ?? (named as unknown as unknown[])[i] ?? Object.values(named)[i]);
+      const values = (item.inputs as readonly { name?: string }[]).map((inp, i) => named[inp.name ?? ""] ?? (named as unknown as unknown[])[i] ?? Object.values(named)[i]);
       const args = values.map((v) => (typeof v === "string" ? this.label(v) : String(v)));
       return { emitter: this.label(l.address), name: ev.eventName, args };
     });
