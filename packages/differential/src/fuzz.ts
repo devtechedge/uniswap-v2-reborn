@@ -61,6 +61,8 @@ export function generateOp(rng: Rng, sys: System, w: World): Op {
       return [0n, 0n];
     }
   };
+  // Turn the protocol fee on early in most scenarios so the fee-mint path (kLast growth) is hit.
+  if (w.feeTo === ZERO && rng.chance(0.12)) return { kind: "setFeeTo", from: ADMIN, on: true };
   // Seed liquidity early so most ops hit live pools instead of empty-address reverts.
   const missing = PAIR_KEYS.filter(([x, y]) => !w.pairs.has(sys.pairAddress(x, y)));
   if (missing.length && rng.chance(0.15 + 0.1 * missing.length)) {
@@ -73,7 +75,7 @@ export function generateOp(rng: Rng, sys: System, w: World): Op {
   if (pair && lp > 0n && (pair.allowances.get(`${from}|${sys.router}`) ?? 0n) === 0n && rng.chance(0.3)) return { kind: "approveLP", from, a, b };
   const roll = rng.int(100);
   if (roll < 5) return { kind: "warp", seconds: rng.chance(0.05) ? 3_000_000_000n : BigInt(rng.int(100_000)) };
-  if (roll < 8) return { kind: "setFeeTo", from: rng.chance(0.8) ? ADMIN : from, on: rng.chance(0.6) };
+  if (roll < 8) return { kind: "setFeeTo", from: rng.chance(0.8) ? ADMIN : from, on: rng.chance(0.75) };
   if (roll < 10) {
     const opts: [Address, Address][] = [[a, b], [a, a], [ZERO, a], [TOKENS.TC, TOKENS.TA]];
     const [x, y] = rng.pick(opts);
