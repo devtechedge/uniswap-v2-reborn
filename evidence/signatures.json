@@ -1,0 +1,41 @@
+{
+  "source": "Candidate signatures transcribed from the public Uniswap v2 reference docs (docs.uniswap.org/contracts/v2/reference) and EIP-20/EIP-2612. Used only to name selectors that REA recovered.",
+  "functions": [
+    "feeTo()", "feeToSetter()", "getPair(address,address)", "allPairs(uint256)", "allPairsLength()",
+    "createPair(address,address)", "setFeeTo(address)", "setFeeToSetter(address)",
+    "name()", "symbol()", "decimals()", "totalSupply()", "balanceOf(address)", "allowance(address,address)",
+    "approve(address,uint256)", "transfer(address,uint256)", "transferFrom(address,address,uint256)",
+    "DOMAIN_SEPARATOR()", "PERMIT_TYPEHASH()", "nonces(address)",
+    "permit(address,address,uint256,uint256,uint8,bytes32,bytes32)",
+    "MINIMUM_LIQUIDITY()", "factory()", "token0()", "token1()", "getReserves()",
+    "price0CumulativeLast()", "price1CumulativeLast()", "kLast()",
+    "mint(address)", "burn(address)", "swap(uint256,uint256,address,bytes)", "skim(address)", "sync()",
+    "initialize(address,address)",
+    "WETH()",
+    "addLiquidity(address,address,uint256,uint256,uint256,uint256,address,uint256)",
+    "addLiquidityETH(address,uint256,uint256,uint256,address,uint256)",
+    "removeLiquidity(address,address,uint256,uint256,uint256,address,uint256)",
+    "removeLiquidityETH(address,uint256,uint256,uint256,address,uint256)",
+    "removeLiquidityWithPermit(address,address,uint256,uint256,uint256,address,uint256,bool,uint8,bytes32,bytes32)",
+    "removeLiquidityETHWithPermit(address,uint256,uint256,uint256,address,uint256,bool,uint8,bytes32,bytes32)",
+    "removeLiquidityETHSupportingFeeOnTransferTokens(address,uint256,uint256,uint256,address,uint256)",
+    "removeLiquidityETHWithPermitSupportingFeeOnTransferTokens(address,uint256,uint256,uint256,address,uint256,bool,uint8,bytes32,bytes32)",
+    "swapExactTokensForTokens(uint256,uint256,address[],address,uint256)",
+    "swapTokensForExactTokens(uint256,uint256,address[],address,uint256)",
+    "swapExactETHForTokens(uint256,address[],address,uint256)",
+    "swapTokensForExactETH(uint256,uint256,address[],address,uint256)",
+    "swapExactTokensForETH(uint256,uint256,address[],address,uint256)",
+    "swapETHForExactTokens(uint256,address[],address,uint256)",
+    "swapExactTokensForTokensSupportingFeeOnTransferTokens(uint256,uint256,address[],address,uint256)",
+    "swapExactETHForTokensSupportingFeeOnTransferTokens(uint256,address[],address,uint256)",
+    "swapExactTokensForETHSupportingFeeOnTransferTokens(uint256,uint256,address[],address,uint256)",
+    "quote(uint256,uint256,uint256)", "getAmountOut(uint256,uint256,uint256)", "getAmountIn(uint256,uint256,uint256)",
+    "getAmountsOut(uint256,address[])", "getAmountsIn(uint256,address[])"
+  ],
+  "events": [
+    "PairCreated(address,address,address,uint256)",
+    "Approval(address,address,uint256)", "Transfer(address,address,uint256)",
+    "Mint(address,uint256,uint256)", "Burn(address,uint256,uint256,address)",
+    "Swap(address,uint256,uint256,uint256,uint256,address)", "Sync(uint112,uint112)"
+  ]
+}

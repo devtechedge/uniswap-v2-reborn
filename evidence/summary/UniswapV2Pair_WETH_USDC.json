@@ -1,0 +1,243 @@
+{
+  "contract": "UniswapV2Pair_WETH_USDC",
+  "reaEvidenceId": "ev_2328f3407f3694a00821f355626b3a0b3d08305e8c5e2e0d84f9b44463576c33",
+  "provider": {
+    "id": "evmole-interface",
+    "name": "REA EVM interface adapter",
+    "version": "evmole@0.9.3"
+  },
+  "bytecodeSha256": "8b5db55fa9ab3b9527508d4abe0b39eb588bf310270c8e04b3f38214e8ba63b4",
+  "bytes": 11293,
+  "compilerMetadata": {
+    "bytecodeOffset": 11241,
+    "cborLength": 50,
+    "entries": [
+      {
+        "key": "bzzr1",
+        "value": {
+          "type": "bytes",
+          "value": "7dca18479e58487606bf70c79e44d8dee62353c9ee6d01f9a9d70885b8765f22"
+        }
+      },
+      {
+        "key": "solc",
+        "value": {
+          "type": "bytes",
+          "value": "000510"
+        }
+      }
+    ]
+  },
+  "functions": [
+    {
+      "selector": "0x022c0d9f",
+      "signature": "swap(uint256,uint256,address,bytes)",
+      "reaArguments": "uint256,uint256,address,bytes",
+      "stateMutability": "nonpayable"
+    },
+    {
+      "selector": "0x06fdde03",
+      "signature": "name()",
+      "reaArguments": "",
+      "stateMutability": "pure"
+    },
+    {
+      "selector": "0x0902f1ac",
+      "signature": "getReserves()",
+      "reaArguments": "",
+      "stateMutability": "view"
+    },
+    {
+      "selector": "0x095ea7b3",
+      "signature": "approve(address,uint256)",
+      "reaArguments": "address,uint256",
+      "stateMutability": "nonpayable"
+    },
+    {
+      "selector": "0x0dfe1681",
+      "signature": "token0()",
+      "reaArguments": "",
+      "stateMutability": "view"
+    },
+    {
+      "selector": "0x18160ddd",
+      "signature": "totalSupply()",
+      "reaArguments": "",
+      "stateMutability": "view"
+    },
+    {
+      "selector": "0x23b872dd",
+      "signature": "transferFrom(address,address,uint256)",
+      "reaArguments": "address,address,uint256",
+      "stateMutability": "nonpayable"
+    },
+    {
+      "selector": "0x30adf81f",
+      "signature": "PERMIT_TYPEHASH()",
+      "reaArguments": "",
+      "stateMutability": "pure"
+    },
+    {
+      "selector": "0x313ce567",
+      "signature": "decimals()",
+      "reaArguments": "",
+      "stateMutability": "pure"
+    },
+    {
+      "selector": "0x3644e515",
+      "signature": "DOMAIN_SEPARATOR()",
+      "reaArguments": "",
+      "stateMutability": "view"
+    },
+    {
+      "selector": "0x485cc955",
+      "signature": "initialize(address,address)",
+      "reaArguments": "address,address",
+      "stateMutability": "nonpayable"
+    },
+    {
+      "selector": "0x5909c0d5",
+      "signature": "price0CumulativeLast()",
+      "reaArguments": "",
+      "stateMutability": "view"
+    },
+    {
+      "selector": "0x5a3d5493",
+      "signature": "price1CumulativeLast()",
+      "reaArguments": "",
+      "stateMutability": "view"
+    },
+    {
+      "selector": "0x6a627842",
+      "signature": "mint(address)",
+      "reaArguments": "address",
+      "stateMutability": "nonpayable"
+    },
+    {
+      "selector": "0x70a08231",
+      "signature": "balanceOf(address)",
+      "reaArguments": "address",
+      "stateMutability": "view"
+    },
+    {
+      "selector": "0x7464fc3d",
+      "signature": "kLast()",
+      "reaArguments": "",
+      "stateMutability": "view"
+    },
+    {
+      "selector": "0x7ecebe00",
+      "signature": "nonces(address)",
+      "reaArguments": "address",
+      "stateMutability": "view"
+    },
+    {
+      "selector": "0x89afcb44",
+      "signature": "burn(address)",
+      "reaArguments": "address",
+      "stateMutability": "nonpayable"
+    },
+    {
+      "selector": "0x95d89b41",
+      "signature": "symbol()",
+      "reaArguments": "",
+      "stateMutability": "pure"
+    },
+    {
+      "selector": "0xa9059cbb",
+      "signature": "transfer(address,uint256)",
+      "reaArguments": "address,uint256",
+      "stateMutability": "nonpayable"
+    },
+    {
+      "selector": "0xba9a7a56",
+      "signature": "MINIMUM_LIQUIDITY()",
+      "reaArguments": "",
+      "stateMutability": "pure"
+    },
+    {
+      "selector": "0xbc25cf77",
+      "signature": "skim(address)",
+      "reaArguments": "address",
+      "stateMutability": "nonpayable"
+    },
+    {
+      "selector": "0xc45a0155",
+      "signature": "factory()",
+      "reaArguments": "",
+      "stateMutability": "view"
+    },
+    {
+      "selector": "0xd21220a7",
+      "signature": "token1()",
+      "reaArguments": "",
+      "stateMutability": "view"
+    },
+    {
+      "selector": "0xd505accf",
+      "signature": "permit(address,address,uint256,uint256,uint8,bytes32,bytes32)",
+      "reaArguments": "address,address,uint256,uint256,uint8,uint256,uint256",
+      "stateMutability": "nonpayable"
+    },
+    {
+      "selector": "0xdd62ed3e",
+      "signature": "allowance(address,address)",
+      "reaArguments": "address,address",
+      "stateMutability": "view"
+    },
+    {
+      "selector": "0xfff6cae9",
+      "signature": "sync()",
+      "reaArguments": "",
+      "stateMutability": "nonpayable"
+    }
+  ],
+  "events": [
+    {
+      "topic0": "0xd78ad95fa46c994b6551d0da85fc275fe613ce37657fb8d5e3d130840159d822",
+      "signature": "Swap(address,uint256,uint256,uint256,uint256,address)"
+    },
+    {
+      "topic0": "0x4c209b5fc8ad50758f13e2e1088ba56a560dff690a1c6fef26394f4c03821c4f",
+      "signature": "Mint(address,uint256,uint256)"
+    },
+    {
+      "topic0": "0xdccd412f0b1252819cb1fd330b93224ca42612892bb3f4f789976e6d81936496",
+      "signature": "Burn(address,uint256,uint256,address)"
+    },
+    {
+      "topic0": "0x1c411e9a96e071241c2f21f7726b17ae89e3cab4c78be50e062b03a9fffbbad1",
+      "signature": "Sync(uint112,uint112)"
+    },
+    {
+      "topic0": "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+      "signature": "Approval(address,address,uint256)"
+    },
+    {
+      "topic0": "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+      "signature": "Transfer(address,address,uint256)"
+    }
+  ],
+  "revertStrings": [
+    "UniswapV2: LOCKED",
+    "UniswapV2: INVALID_TO",
+    "UniswapV2: K",
+    "Uniswap V2",
+    "UniswapV2: FORBIDDEN",
+    "UniswapV2: EXPIRED",
+    "UniswapV2: INVALID_SIGNATURE",
+    "UniswapV2: TRANSFER_FAILED",
+    "UniswapV2: OVERFLOW",
+    "UniswapV2: INSUFFICIENT_OUTPUT_AMOUNTUniswapV2: INSUFFICIENT_INPUT_AMOUNTUniswapV2: INSUFFICIENT_LIQUIDITYUniswapV2: INSUFFICIENT_LIQUIDITY_BURNEDUniswapV2: INSUFFICIENT_LIQUIDITY_MINTED",
+    "ebzzr1X "
+  ],
+  "limitations": [
+    "Configured worker resource soft limits: address_space_bytes=3221225472, cpu_seconds=30, file_size_bytes=16777216. Selected from inherited tighter limits; original hard limits are retained. Effective worker limits are not independently probed.",
+    "Upstream may also report terminal metadata while recovering selectors. Its reported values are retained in raw_result, but integer precision and non-text-key coverage are unknown in the JS binding; complete original bytecode remains available.",
+    "Recovered selectors, argument strings and mutability are upstream inferences, not verified ABI signatures or names. Empty results do not prove the absence of callable dispatch.",
+    "Bytecode kind, hardfork and deployed-contract authenticity are unknown. This inspection performs no target runtime execution, chain/RPC lookup or network request.",
+    "Original carrier and decoded bytecode SHA-256 are distinct identities; SHA-256 is not the Ethereum Keccak code hash.",
+    "Terminal CBOR metadata is an independently decoded candidate, not proof of Solidity origin, source identity or deployment. Nested or unsupported values retain explicit unavailable interpretation and original byte ranges.",
+    "The owned worker has a 256 MiB JavaScript heap, 3 GiB virtual address-space limit and 30-second deadline. Virtual address space is distinct from resident memory; limits fail without partial success."
+  ]
+}

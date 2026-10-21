@@ -1,0 +1,195 @@
+{
+  "contract": "UniswapV2Router02",
+  "reaEvidenceId": "ev_925dd48ada716c9a29a1d2c5e76dc67d93611bea1b434c0e66bb0c74585a3e4f",
+  "provider": {
+    "id": "evmole-interface",
+    "name": "REA EVM interface adapter",
+    "version": "evmole@0.9.3"
+  },
+  "bytecodeSha256": "ccef50da4af021b09ada39d78db5d281fffff81a57969c7028bccc1f50d37854",
+  "bytes": 21943,
+  "compilerMetadata": {
+    "bytecodeOffset": 21890,
+    "cborLength": 51,
+    "entries": [
+      {
+        "key": "ipfs",
+        "value": {
+          "type": "bytes",
+          "value": "12206dd6e03c4b2c0a8e55214926227ae9e2d6f9fec2ce74a6446d615afa355c84f3"
+        }
+      },
+      {
+        "key": "solc",
+        "value": {
+          "type": "bytes",
+          "value": "000606"
+        }
+      }
+    ]
+  },
+  "functions": [
+    {
+      "selector": "0x02751cec",
+      "signature": "removeLiquidityETH(address,uint256,uint256,uint256,address,uint256)",
+      "reaArguments": "address,uint256,uint256,uint256,address,uint256",
+      "stateMutability": "nonpayable"
+    },
+    {
+      "selector": "0x054d50d4",
+      "signature": "getAmountOut(uint256,uint256,uint256)",
+      "reaArguments": "uint256,uint256,uint256",
+      "stateMutability": "view"
+    },
+    {
+      "selector": "0x18cbafe5",
+      "signature": "swapExactTokensForETH(uint256,uint256,address[],address,uint256)",
+      "reaArguments": "uint256,uint256,address[],address,uint256",
+      "stateMutability": "view"
+    },
+    {
+      "selector": "0x1f00ca74",
+      "signature": "getAmountsIn(uint256,address[])",
+      "reaArguments": "uint256,uint256[]",
+      "stateMutability": "view"
+    },
+    {
+      "selector": "0x2195995c",
+      "signature": "removeLiquidityWithPermit(address,address,uint256,uint256,uint256,address,uint256,bool,uint8,bytes32,bytes32)",
+      "reaArguments": "address,address,uint256,uint256,uint256,address,uint256,bool,uint8,uint256,uint256",
+      "stateMutability": "nonpayable"
+    },
+    {
+      "selector": "0x38ed1739",
+      "signature": "swapExactTokensForTokens(uint256,uint256,address[],address,uint256)",
+      "reaArguments": "uint256,uint256,uint256[],address,uint256",
+      "stateMutability": "view"
+    },
+    {
+      "selector": "0x4a25d94a",
+      "signature": "swapTokensForExactETH(uint256,uint256,address[],address,uint256)",
+      "reaArguments": "uint256,uint256,address[],address,uint256",
+      "stateMutability": "view"
+    },
+    {
+      "selector": "0x5b0d5984",
+      "signature": "removeLiquidityETHWithPermitSupportingFeeOnTransferTokens(address,uint256,uint256,uint256,address,uint256,bool,uint8,bytes32,bytes32)",
+      "reaArguments": "address,uint256,uint256,uint256,address,uint256,bool,uint8,uint256,uint256",
+      "stateMutability": "nonpayable"
+    },
+    {
+      "selector": "0x5c11d795",
+      "signature": "swapExactTokensForTokensSupportingFeeOnTransferTokens(uint256,uint256,address[],address,uint256)",
+      "reaArguments": "uint256,uint256,address[],address,uint256",
+      "stateMutability": "nonpayable"
+    },
+    {
+      "selector": "0x791ac947",
+      "signature": "swapExactTokensForETHSupportingFeeOnTransferTokens(uint256,uint256,address[],address,uint256)",
+      "reaArguments": "uint256,uint256,address[],address,uint256",
+      "stateMutability": "nonpayable"
+    },
+    {
+      "selector": "0x7ff36ab5",
+      "signature": "swapExactETHForTokens(uint256,address[],address,uint256)",
+      "reaArguments": "uint256,address[],address,uint256",
+      "stateMutability": "payable"
+    },
+    {
+      "selector": "0x85f8c259",
+      "signature": "getAmountIn(uint256,uint256,uint256)",
+      "reaArguments": "uint256,uint256,uint256",
+      "stateMutability": "view"
+    },
+    {
+      "selector": "0x8803dbee",
+      "signature": "swapTokensForExactTokens(uint256,uint256,address[],address,uint256)",
+      "reaArguments": "uint256,uint256,uint256[],address,uint256",
+      "stateMutability": "view"
+    },
+    {
+      "selector": "0xad5c4648",
+      "signature": "WETH()",
+      "reaArguments": "",
+      "stateMutability": "view"
+    },
+    {
+      "selector": "0xad615dec",
+      "signature": "quote(uint256,uint256,uint256)",
+      "reaArguments": "uint256,uint256,uint256",
+      "stateMutability": "view"
+    },
+    {
+      "selector": "0xaf2979eb",
+      "signature": "removeLiquidityETHSupportingFeeOnTransferTokens(address,uint256,uint256,uint256,address,uint256)",
+      "reaArguments": "address,uint256,uint256,uint256,address,uint256",
+      "stateMutability": "nonpayable"
+    },
+    {
+      "selector": "0xb6f9de95",
+      "signature": "swapExactETHForTokensSupportingFeeOnTransferTokens(uint256,address[],address,uint256)",
+      "reaArguments": "uint256,address[],address,uint256",
+      "stateMutability": "payable"
+    },
+    {
+      "selector": "0xbaa2abde",
+      "signature": "removeLiquidity(address,address,uint256,uint256,uint256,address,uint256)",
+      "reaArguments": "address,address,uint256,uint256,uint256,address,uint256",
+      "stateMutability": "nonpayable"
+    },
+    {
+      "selector": "0xc45a0155",
+      "signature": "factory()",
+      "reaArguments": "",
+      "stateMutability": "view"
+    },
+    {
+      "selector": "0xd06ca61f",
+      "signature": "getAmountsOut(uint256,address[])",
+      "reaArguments": "uint256,uint256[]",
+      "stateMutability": "view"
+    },
+    {
+      "selector": "0xded9382a",
+      "signature": "removeLiquidityETHWithPermit(address,uint256,uint256,uint256,address,uint256,bool,uint8,bytes32,bytes32)",
+      "reaArguments": "address,uint256,uint256,uint256,address,uint256,bool,uint8,uint256,uint256",
+      "stateMutability": "nonpayable"
+    },
+    {
+      "selector": "0xe8e33700",
+      "signature": "addLiquidity(address,address,uint256,uint256,uint256,uint256,address,uint256)",
+      "reaArguments": "address,address,uint256,uint256,uint256,uint256,address,uint256",
+      "stateMutability": "nonpayable"
+    },
+    {
+      "selector": "0xf305d719",
+      "signature": "addLiquidityETH(address,uint256,uint256,uint256,address,uint256)",
+      "reaArguments": "address,uint256,uint256,uint256,address,uint256",
+      "stateMutability": "payable"
+    },
+    {
+      "selector": "0xfb3bdb41",
+      "signature": "swapETHForExactTokens(uint256,address[],address,uint256)",
+      "reaArguments": "uint256,address[],address,uint256",
+      "stateMutability": "payable"
+    }
+  ],
+  "events": [],
+  "revertStrings": [
+    "UniswapV2Router: EXPIRED",
+    "UniswapV2Router: INVALID_PATH",
+    "TransferHelper: TRANSFER_FAILED",
+    "UniswapV2Library: INVALID_PATH",
+    "UniswapV2Library: ZERO_ADDRESS",
+    "UniswapV2Library: INSUFFICIENT_OUTPUT_AMOUNTUniswapV2Library: IDENTICAL_ADDRESSESUniswapV2Router: INSUFFICIENT_B_AMOUNTUniswapV2Library: INSUFFICIENT_LIQUIDITYUniswapV2Library: INSUFFICIENT_AMOUNTUniswapV2Router: EXCESSIVE_INPUT_AMOUNTUniswapV2Router: INSUFFICIENT_A_AMOUNTTransferHelper: ETH_TRANSFER_FAILEDUniswapV2Router: INSUFFICIENT_OUTPUT_AMOUNTTransferHelper: TRANSFER_FROM_FAILEDUniswapV2Library: INSUFFICIENT_INPUT_AMOUNT"
+  ],
+  "limitations": [
+    "Configured worker resource soft limits: address_space_bytes=3221225472, cpu_seconds=30, file_size_bytes=16777216. Selected from inherited tighter limits; original hard limits are retained. Effective worker limits are not independently probed.",
+    "Upstream may also report terminal metadata while recovering selectors. Its reported values are retained in raw_result, but integer precision and non-text-key coverage are unknown in the JS binding; complete original bytecode remains available.",
+    "Recovered selectors, argument strings and mutability are upstream inferences, not verified ABI signatures or names. Empty results do not prove the absence of callable dispatch.",
+    "Bytecode kind, hardfork and deployed-contract authenticity are unknown. This inspection performs no target runtime execution, chain/RPC lookup or network request.",
+    "Original carrier and decoded bytecode SHA-256 are distinct identities; SHA-256 is not the Ethereum Keccak code hash.",
+    "Terminal CBOR metadata is an independently decoded candidate, not proof of Solidity origin, source identity or deployment. Nested or unsupported values retain explicit unavailable interpretation and original byte ranges.",
+    "The owned worker has a 256 MiB JavaScript heap, 3 GiB virtual address-space limit and 30-second deadline. Virtual address space is distinct from resident memory; limits fail without partial success."
+  ]
+}
