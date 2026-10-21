@@ -1,0 +1,281 @@
+{
+  "generatedAt": "2026-10-21T19:00:34.700Z",
+  "seconds": 427.037,
+  "impls": [
+    "original",
+    "reborn"
+  ],
+  "steps": 40,
+  "scenarios": 120,
+  "ops": 4800,
+  "okOps": 3516,
+  "revertedOps": 1284,
+  "byKind": {
+    "swapExactOut": {
+      "total": 512,
+      "ok": 275
+    },
+    "approveLP": {
+      "total": 662,
+      "ok": 662
+    },
+    "addLiquidity": {
+      "total": 590,
+      "ok": 521
+    },
+    "addLiquidityETH": {
+      "total": 527,
+      "ok": 461
+    },
+    "swapExactIn": {
+      "total": 536,
+      "ok": 299
+    },
+    "skim": {
+      "total": 111,
+      "ok": 111
+    },
+    "setFeeTo": {
+      "total": 236,
+      "ok": 215
+    },
+    "donate": {
+      "total": 270,
+      "ok": 260
+    },
+    "warp": {
+      "total": 198,
+      "ok": 198
+    },
+    "flash": {
+      "total": 503,
+      "ok": 214
+    },
+    "sync": {
+      "total": 125,
+      "ok": 125
+    },
+    "swapExactInForETH": {
+      "total": 25,
+      "ok": 23
+    },
+    "createPair": {
+      "total": 74,
+      "ok": 12
+    },
+    "rawSwap": {
+      "total": 202,
+      "ok": 16
+    },
+    "removeLiquidityETH": {
+      "total": 108,
+      "ok": 50
+    },
+    "removeLiquidity": {
+      "total": 101,
+      "ok": 57
+    },
+    "swapExactETHIn": {
+      "total": 20,
+      "ok": 17
+    }
+  },
+  "reasons": {
+    "(empty revert)": 239,
+    "UniswapV2Router: EXPIRED": 67,
+    "UniswapV2: FORBIDDEN": 21,
+    "UniswapV2Router: INSUFFICIENT_OUTPUT_AMOUNT": 22,
+    "TransferHelper: TRANSFER_FROM_FAILED": 63,
+    "UniswapV2Library: INVALID_PATH": 71,
+    "UniswapV2: K": 188,
+    "UniswapV2: INSUFFICIENT_LIQUIDITY_MINTED": 47,
+    "UniswapV2Router: EXCESSIVE_INPUT_AMOUNT": 27,
+    "UniswapV2: INSUFFICIENT_INPUT_AMOUNT": 136,
+    "UniswapV2Router: INSUFFICIENT_B_AMOUNT": 33,
+    "UniswapV2: PAIR_EXISTS": 23,
+    "UniswapV2: INVALID_TO": 98,
+    "UniswapV2Router: INSUFFICIENT_A_AMOUNT": 27,
+    "MockToken: BALANCE": 10,
+    "ds-math-sub-underflow": 55,
+    "UniswapV2: LOCKED": 44,
+    "UniswapV2: IDENTICAL_ADDRESSES": 16,
+    "UniswapV2: INSUFFICIENT_OUTPUT_AMOUNT": 31,
+    "UniswapV2Library: INSUFFICIENT_OUTPUT_AMOUNT": 6,
+    "UniswapV2: ZERO_ADDRESS": 23,
+    "UniswapV2Library: INSUFFICIENT_AMOUNT": 11,
+    "UniswapV2Library: INSUFFICIENT_INPUT_AMOUNT": 11,
+    "UniswapV2: INSUFFICIENT_LIQUIDITY_BURNED": 12,
+    "UniswapV2Library: INSUFFICIENT_LIQUIDITY": 3
+  },
+  "comparisons": {
+    "original-vs-model": 4800,
+    "reborn-vs-model": 4800,
+    "original-vs-reborn": 4800,
+    "original-state-vs-model": 4800,
+    "reborn-state-vs-model": 4800,
+    "original-state-vs-reborn": 4800
+  },
+  "mismatches": [],
+  "gas": {
+    "approveLP": {
+      "original": {
+        "n": 662,
+        "total": "14540438"
+      },
+      "reborn": {
+        "n": 662,
+        "total": "14602421"
+      }
+    },
+    "addLiquidity": {
+      "original": {
+        "n": 521,
+        "total": "670392459"
+      },
+      "reborn": {
+        "n": 521,
+        "total": "652608896"
+      }
+    },
+    "addLiquidityETH": {
+      "original": {
+        "n": 461,
+        "total": "678447040"
+      },
+      "reborn": {
+        "n": 461,
+        "total": "660677227"
+      }
+    },
+    "skim": {
+      "original": {
+        "n": 111,
+        "total": "1609199"
+      },
+      "reborn": {
+        "n": 111,
+        "total": "1559006"
+      }
+    },
+    "setFeeTo": {
+      "original": {
+        "n": 215,
+        "total": "3085420"
+      },
+      "reborn": {
+        "n": 215,
+        "total": "2865845"
+      }
+    },
+    "donate": {
+      "original": {
+        "n": 260,
+        "total": "2663720"
+      },
+      "reborn": {
+        "n": 260,
+        "total": "2663720"
+      }
+    },
+    "swapExactIn": {
+      "original": {
+        "n": 299,
+        "total": "20797977"
+      },
+      "reborn": {
+        "n": 299,
+        "total": "21299027"
+      }
+    },
+    "flash": {
+      "original": {
+        "n": 214,
+        "total": "7685840"
+      },
+      "reborn": {
+        "n": 214,
+        "total": "7658499"
+      }
+    },
+    "sync": {
+      "original": {
+        "n": 125,
+        "total": "1863920"
+      },
+      "reborn": {
+        "n": 125,
+        "total": "1853744"
+      }
+    },
+    "swapExactOut": {
+      "original": {
+        "n": 275,
+        "total": "19318451"
+      },
+      "reborn": {
+        "n": 275,
+        "total": "19777726"
+      }
+    },
+    "swapExactInForETH": {
+      "original": {
+        "n": 23,
+        "total": "2022801"
+      },
+      "reborn": {
+        "n": 23,
+        "total": "2014236"
+      }
+    },
+    "removeLiquidityETH": {
+      "original": {
+        "n": 50,
+        "total": "8301832"
+      },
+      "reborn": {
+        "n": 50,
+        "total": "8190924"
+      }
+    },
+    "removeLiquidity": {
+      "original": {
+        "n": 57,
+        "total": "5885205"
+      },
+      "reborn": {
+        "n": 57,
+        "total": "5879883"
+      }
+    },
+    "swapExactETHIn": {
+      "original": {
+        "n": 17,
+        "total": "1268784"
+      },
+      "reborn": {
+        "n": 17,
+        "total": "1294489"
+      }
+    },
+    "createPair": {
+      "original": {
+        "n": 12,
+        "total": "29798568"
+      },
+      "reborn": {
+        "n": 12,
+        "total": "28907868"
+      }
+    },
+    "rawSwap": {
+      "original": {
+        "n": 16,
+        "total": "114610"
+      },
+      "reborn": {
+        "n": 16,
+        "total": "114133"
+      }
+    }
+  }
+}
