@@ -1,0 +1,35 @@
+:root { color-scheme: dark; --bg: #0b0d12; --card: #141821; --line: #262c3a; --text: #e6e9ef; --muted: #8b93a7; --accent: #7dd3fc; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.5 system-ui, -apple-system, Segoe UI, sans-serif; }
+main { max-width: 1180px; margin: 0 auto; padding: 32px 20px 80px; }
+h1 { margin: 0 0 8px; font-size: 32px; }
+h2 { margin-top: 32px; }
+h3 { margin: 18px 0 8px; font-size: 16px; color: var(--accent); }
+a { color: var(--accent); }
+.muted { color: var(--muted); }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px 20px; margin: 16px 0; }
+.grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 16px; }
+.grid .card { margin: 0; }
+.wide { grid-column: 1 / -1; }
+label { display: block; margin: 8px 0; color: var(--muted); }
+input, select { display: block; width: 100%; margin-top: 4px; padding: 8px 10px; background: #0f1219; color: var(--text); border: 1px solid var(--line); border-radius: 8px; font: inherit; }
+.row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.row input { width: 140px; margin: 0; }
+button { padding: 8px 14px; border-radius: 8px; border: 1px solid var(--accent); background: transparent; color: var(--accent); font: inherit; cursor: pointer; margin: 4px 0; }
+button:disabled { opacity: 0.4; cursor: default; }
+button:hover:not(:disabled) { background: #10202b; }
+table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+td, th { padding: 6px 8px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+.mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; word-break: break-all; }
+.small { font-size: 12px; }
+.ok { color: #86efac; }
+.err { color: #fca5a5; }
+.quote { margin: 10px 0; }
+.chart { width: 100%; background: #0f1219; border-radius: 8px; }
+.axis { fill: var(--muted); font-size: 11px; }
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.stats div { background: #0f1219; border-radius: 10px; padding: 12px; }
+.stats b { display: block; font-size: 26px; color: var(--accent); }
+.stats span { color: var(--muted); font-size: 13px; }
+details { border-bottom: 1px solid var(--line); padding: 4px 0; }
+@media (max-width: 860px) { .grid { grid-template-columns: 1fr; } .stats { grid-template-columns: 1fr 1fr; } }
