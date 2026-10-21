@@ -61,4 +61,7 @@ for (const f of readdirSync("evidence/bytecode").filter((f) => f.endsWith(".hex"
   const buf = Buffer.from(readFileSync(`evidence/bytecode/${f}`, "utf8").trim().slice(2), "hex");
   hashes[`evidence/bytecode/${f}`] = createHash("sha256").update(buf).digest("hex") + " (decoded bytes)";
 }
+for (const f of ["evidence/storage-probe.json", "evidence/signatures.json", ...readdirSync("evidence/summary").map((x) => `evidence/summary/${x}`)]) {
+  hashes[f] = createHash("sha256").update(readFileSync(f)).digest("hex");
+}
 writeFileSync("evidence/SHA256SUMS.json", JSON.stringify(hashes, null, 2) + "\n");
