@@ -12,3 +12,5 @@ reports/*.tmp
 next-env.d.ts
 *.tsbuildinfo
 broadcast
+playwright-report
+test-results
