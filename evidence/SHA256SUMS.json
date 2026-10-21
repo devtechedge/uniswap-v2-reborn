@@ -8,6 +8,7 @@
   "evidence/bytecode/WETH9.hex": "5566bf50796faf93c9b6f6adacd3b32c70bfe16b48ffc59db6cd144cbdc89739 (decoded bytes)",
   "evidence/storage-probe.json": "9e9eedaec3f9ee67a412307fdcb3ef1233141cb2e4aee71058c16dd21bee312e",
   "evidence/signatures.json": "4bd3e94f241905c1dfb34dde263941f06e2068ebb4483151c3fe1bc7ebbd1891",
+  "evidence/historical/weth-usdc-swaps.json": "129c30424a93ce5a54c90400ce3466bdb69bb2905de7b2245490988e3411bf48",
   "evidence/summary/UniswapV2Factory.json": "84fa5564522880ef688ef45057e1bfe65f497ef63a3f8d3a3bed18d19da8bf28",
   "evidence/summary/UniswapV2Pair_WETH_USDC.json": "caae038d0e6d437cdebeac50b53ee9009b2191055da25d1ec33e24cd0acc978d",
   "evidence/summary/UniswapV2Router02.json": "77e3b583b8d32467a7e96c9f5ae5466e9460a8b52b25d150b452621144ae6329"
