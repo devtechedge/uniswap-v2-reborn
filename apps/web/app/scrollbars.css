@@ -1,0 +1,12 @@
+/* Overlay, hover-reveal scrollbars on every inner scrolling pane. html/body are excluded on purpose:
+   the pointer is always over the page, so revealing on body:hover would make the bar always on. */
+* { scrollbar-width: thin; scrollbar-color: transparent transparent; }
+*:not(html):not(body):hover, *:not(html):not(body):focus-within { scrollbar-color: var(--thumb) transparent; }
+html { scrollbar-width: thin; scrollbar-color: var(--thumb) transparent; }
+::-webkit-scrollbar { width: 8px; height: 8px; background: transparent; }
+::-webkit-scrollbar-button { display: none; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: transparent; border-radius: 8px; }
+*:not(html):not(body):hover::-webkit-scrollbar-thumb, *:not(html):not(body):focus-within::-webkit-scrollbar-thumb { background: var(--thumb); }
+html::-webkit-scrollbar-thumb { background: var(--thumb); }
+.scroll-pane { max-height: 420px; overflow: auto; }
